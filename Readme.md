@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Полина Гончарова](https://up.htmlacademy.ru/htmlcss/15/user/202706).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nicolamarkelov).
 
 ---
 
