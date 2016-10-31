@@ -9,24 +9,21 @@
       <!-- Правильно ли, что в header неизменная верхняя шапка? -->
       <div class="header-top">
         <!-- Вставить ширину/высоту -->
-        <img src="" alt="Техномарт" width="" height=""/>
+        <h1 class="logo">
+          <a href="#" title="Technomart"><img src="images/logo.png" alt="Technomart"></a>
+        </h1>
         <form class="search" action="index.html" method="post">
           <label>
-            <!-- Вставить ширину/высоту и нужна ли она тут и нужно ли к иконкам alt? -->
-            <img src="" alt="Поиск" width="" height=""/>
+            <!-- Иконки с помощью фона(!!) -->
             Поиск:
             <input type="text" name="search">
           </label>
         </form>
         <section class="header-favorites">
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="Закладки" width="" height=""/>
           <!-- Как сделать динамическую цифру? -->
           Закладки: 0
         </section>
-        <section class="header-basket">
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="Корзина" width="" height=""/>
+        <section class="header-cart">
           Корзина: 0
         </section>
         <a class="btn" href="#">Оформить заказ</a>
@@ -85,46 +82,50 @@
       <div class="categories">
         <!-- Правильно ли, что у маленьких секций разные классы, т.к. разные фоны?
         И в каком порядке правильно размещать секции? Куда по очереди большую?-->
-        <section class="categories-materials">
-          <!-- Вопрос про заголовки, на этой же странице нет h1? И как их
-          лучше распределить. И являются ли здесь "материалы" заголовком?
-          И в каком порядке картинка\ссылка в section?-->
-          <h3>Материалы</h3>
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="" width="" height=""/>
-          <a class="btn" href="#">На любой вкус</a>
-        </section>
-        <section class="categories-instrument">
-          <h3>Инструмент</h3>
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="" width="" height=""/>
-          <a class="btn" href="#">На все случаи</a>
-        </section>
-        <section class="categories-mechanism">
-          <h3>Техника</h3>
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="" width="" height=""/>
-          <a class="btn" href="#">Для стройки</a>
-        </section>
-        <section class="categories-discount">
-          <h3>Скидки 50%</h3>
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="" width="" height=""/>
-          <a class="btn" href="#">На 350 товаров</a>
-        </section>
-        <section class="categories-delivery">
-          <h3>Доставка</h3>
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="" width="" height=""/>
-          <a class="btn" href="#">Бесплатно</a>
-        </section>
-        <section class="categories-big-catalog">
-          <h2>Перфораторы</h2>
-          <!-- Вставить ширину/высоту -->
-          <!-- Это же будет галлерея? -->
-          <img src="" alt="" width="" height=""/>
-          <a class="btn" href="#">Открыть каталог</a>
-        </section>
+        <div class="categories-up">
+          <section class="categories-item categories-materials">
+            <!-- Вопрос про заголовки, на этой же странице нет h1? И как их
+            лучше распределить. И являются ли здесь "материалы" заголовком?
+            И в каком порядке картинка\ссылка в section?-->
+            <h3>Материалы</h3>
+            <!-- Вставить ширину/высоту -->
+            <img src="" alt="" width="" height=""/>
+            <a class="btn" href="#">На любой вкус</a>
+          </section>
+          <section class="categories-item categories-instrument">
+            <h3>Инструмент</h3>
+            <!-- Вставить ширину/высоту -->
+            <img src="" alt="" width="" height=""/>
+            <a class="btn" href="#">На все случаи</a>
+          </section>
+          <section class="categories-item categories-mechanism">
+            <h3>Техника</h3>
+            <!-- Вставить ширину/высоту -->
+            <img src="" alt="" width="" height=""/>
+            <a class="btn" href="#">Для стройки</a>
+          </section>
+        </div>
+        <div class="categoried-down">
+          <section class="categories-big-catalog">
+            <h2>Перфораторы</h2>
+            <!-- Вставить ширину/высоту -->
+            <!-- Слайдер -->
+            <img src="" alt="" width="" height=""/>
+            <a class="btn" href="#">Открыть каталог</a>
+          </section>
+          <section class="categories-item categories-discount">
+            <h3>Скидки 50%</h3>
+            <!-- Вставить ширину/высоту -->
+            <img src="" alt="" width="" height=""/>
+            <a class="btn" href="#">На 350 товаров</a>
+          </section>
+          <section class="categories-item categories-delivery">
+            <h3>Доставка</h3>
+            <!-- Вставить ширину/высоту -->
+            <img src="" alt="" width="" height=""/>
+            <a class="btn" href="#">Бесплатно</a>
+          </section>
+        </div>
       </div>
       <!-- Может ли быть класс одинаковый у "популярные товары" и "популярные
       производители"? -->
@@ -134,37 +135,37 @@
           <a class="btn" href="#">Все популярные товары</a>
         </div>
         <div class="popular-content">
-          <section>
+          <article class="popular-content-item">
             <!-- Вставить ширину/высоту -->
             <img src="" alt="Перфоратор BOSCH BFG 9000" width="" height=""/>
             <!-- strong или b? -->
             <strong>Перфоратор BOSCH BFG 9000</strong>
             <span>32500 р.</span>
             <a class="btn" href="#">25500 р./a>
-          </section>
-          <section>
+          </article>
+          <article class="popular-content-item">
             <!-- Вставить ширину/высоту -->
             <img src="" alt="Перфоратор BOSCH BFG 3000" width="" height=""/>
             <!-- strong или b? -->
             <strong>Перфоратор BOSCH BFG 3000</strong>
             <span>22500 р.</span>
             <a class="btn" href="#">15500 р./a>
-          </section>
-          <section>
+          </article>
+          <article class="popular-content-item">
             <!-- Вставить ширину/высоту -->
             <img src="" alt="Перфоратор BOSCH BFG 6000" width="" height=""/>
             <!-- strong или b? -->
             <strong>Перфоратор BOSCH BFG 6000</strong>
             <span>30500 р.</span>
             <a class="btn" href="#">25500 р./a>
-          </section>
-          <section>
+          </article>
+          <article class="popular-content-item">
             <!-- Вставить ширину/высоту -->
             <img src="" alt="Перфоратор BOSCH BFG 2000" width="" height=""/>
             <!-- strong или b? -->
             <strong>Перфоратор BOSCH BFG 2000</strong>
             <a class="btn" href="#">12500 р./a>
-          </section>
+          </article>
         </div>
       </div>
       <div class="popular">
@@ -173,40 +174,23 @@
           <a class="btn" href="#">Все производители</a>
         </div>
         <div class="popular-content">
-          <!-- Нужно ли каждую картинку в section? Правильно ли каждую картинку
-          в figure? -->
-          <figure>
-            <!-- Вставить ширину/высоту -->
-            <a href="#"><img src="" alt="BOSCH" width="" height=""/></a>
-          </figure>
-          <figure>
-            <!-- Вставить ширину/высоту -->
-            <a href="#"><img src="" alt="Makita" width="" height=""/></a>
-          </figure>
-          <figure>
-            <!-- Вставить ширину/высоту -->
-            <a href="#"><img src="" alt="DeWALT" width="" height=""/></a>
-          </figure>
-          <figure>
-            <!-- Вставить ширину/высоту -->
-            <a href="#"><img src="" alt="Интерскол" width="" height=""/></a>
-          </figure>
-          <figure>
-            <!-- Вставить ширину/высоту -->
-            <a href="#"><img src="" alt="Hitachi" width="" height=""/></a>
-          </figure>
-          <figure>
-            <!-- Вставить ширину/высоту -->
-            <a href="#"><img src="" alt="LG" width="" height=""/></a>
-          </figure>
-          <figure>
-            <!-- Вставить ширину/высоту -->
-            <a href="#"><img src="" alt="AEG" width="" height=""/></a>
-          </figure>
-          <figure>
-            <!-- Вставить ширину/высоту -->
-            <a href="#"><img src="" alt="Metabo" width="" height=""/></a>
-          </figure>
+          <!-- Добавила классы к ссылкам -->
+          <!-- Вставить ширину/высоту -->
+          <a class="popular-content-developer" href="#"><img src="" alt="BOSCH" width="" height=""/></a>
+          <!-- Вставить ширину/высоту -->
+          <a class="popular-content-developer" href="#"><img src="" alt="Makita" width="" height=""/></a>
+          <!-- Вставить ширину/высоту -->
+          <a class="popular-content-developer" href="#"><img src="" alt="DeWALT" width="" height=""/></a>
+          <!-- Вставить ширину/высоту -->
+          <a class="popular-content-developer" href="#"><img src="" alt="Интерскол" width="" height=""/></a>
+          <!-- Вставить ширину/высоту -->
+          <a class="popular-content-developer" href="#"><img src="" alt="Hitachi" width="" height=""/></a>
+          <!-- Вставить ширину/высоту -->
+          <a class="popular-content-developer" href="#"><img src="" alt="LG" width="" height=""/></a>
+          <!-- Вставить ширину/высоту -->
+          <a class="popular-content-developer" href="#"><img src="" alt="AEG" width="" height=""/></a>
+          <!-- Вставить ширину/высоту -->
+          <a class="popular-content-developer" href="#"><img src="" alt="Metabo" width="" height=""/></a>
         </div>
       <div class="services">
         <h2>Сервисы</h2>
@@ -329,9 +313,9 @@
           Все права защищены
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="btn social-btn" href="#">Вконтакте</a>
+          <a class="btn social-btn" href="#">Фейсбук</a>
+          <a class="btn social-btn" href="#">Инстаграм</a>
         </section>
         <section class="footer-feedback">
           <p>

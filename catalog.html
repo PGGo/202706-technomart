@@ -6,27 +6,23 @@
   </head>
   <body>
     <header class="main-header">
-      <!-- Правильно ли, что в header неизменная верхняя шапка? -->
       <div class="header-top">
         <!-- Вставить ширину/высоту -->
-        <a href="#"><img src="" alt="Техномарт" width="" height=""/></a>
+        <h1 class="logo">
+          <a href="#" title="Technomart"><img src="images/logo.png" alt="Technomart"></a>
+        </h1>
         <form class="search" action="index.html" method="post">
           <label>
-            <!-- Вставить ширину/высоту и нужна ли она тут и нужно ли к иконкам alt? -->
-            <img src="" alt="Поиск" width="" height=""/>
+            <!-- Иконки с помощью фона(!!) -->
             Поиск:
             <input type="text" name="search">
           </label>
         </form>
         <section class="header-favorites">
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="Закладки" width="" height=""/>
           <!-- Как сделать динамическую цифру? -->
           Закладки: 0
         </section>
-        <section class="header-basket">
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="Корзина" width="" height=""/>
+        <section class="header-cart">
           Корзина: 0
         </section>
         <a class="btn" href="#">Оформить заказ</a>
@@ -111,6 +107,8 @@
           </p>
           <!-- Как сделать фильтр цены? -->
           <form class="filters-form" action="index.html" method="post">
+            <b>Цена:</b>
+            <input type="range>"
             <b>Производители:</b>
             <input type="checkbox" name="bosch" id="bosch" checked>
             <label for="bosch">BOSCH</label>
@@ -123,7 +121,6 @@
             <input type="checkbox" name="hitachi" id="hitachi">
             <label for="hitachi">Hitachi</label>
 
-            <!-- Корректно ли в value использовать цифры? -->
             <b>Питание:</b>
             <label>
               <input type="radio" name="group-item" value="1" checked>
