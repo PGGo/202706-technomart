@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <!-- Правильно ли, что в header неизменная верхняя шапка? -->
       <div class="header-top">
-        <!-- Вставить ширину/высоту -->
         <h1 class="logo">
-          <a href="#" title="Technomart"><img src="images/logo.png" alt="Technomart"></a>
+          <a href="#" title="Technomart">
+            <img src="img/technomart-logo.jpg" alt="Technomart" width="220" height="47">
+          </a>
         </h1>
         <form class="search" action="index.html" method="post">
           <label>
@@ -80,55 +81,43 @@
     </header>
     <main class="container">
       <div class="categories">
-        <!-- Правильно ли, что у маленьких секций разные классы, т.к. разные фоны?
-        И в каком порядке правильно размещать секции? Куда по очереди большую?-->
         <div class="categories-up">
           <section class="categories-item categories-materials">
-            <!-- Вопрос про заголовки, на этой же странице нет h1? И как их
-            лучше распределить. И являются ли здесь "материалы" заголовком?
-            И в каком порядке картинка\ссылка в section?-->
             <h3>Материалы</h3>
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="" width="" height=""/>
+            <img src="img/icon-paint.png" alt="Материалы" width="44" height="65"/>
             <a class="btn" href="#">На любой вкус</a>
           </section>
           <section class="categories-item categories-instrument">
             <h3>Инструмент</h3>
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="" width="" height=""/>
+            <img src="img/icon-drill.png" alt="Инструмент" width="75" height="61"/>
             <a class="btn" href="#">На все случаи</a>
           </section>
           <section class="categories-item categories-mechanism">
             <h3>Техника</h3>
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="" width="" height=""/>
+            <img src="img/icon-tractor.png" alt="Техника" width="78" height="62"/>
             <a class="btn" href="#">Для стройки</a>
           </section>
         </div>
         <div class="categoried-down">
           <section class="categories-big-catalog">
             <h2>Перфораторы</h2>
-            <!-- Вставить ширину/высоту -->
             <!-- Слайдер -->
-            <img src="" alt="" width="" height=""/>
+            <img src="img/man-drill.jpg" alt="Перфораторы" width="620" height="266"/>
             <a class="btn" href="#">Открыть каталог</a>
           </section>
           <section class="categories-item categories-discount">
             <h3>Скидки 50%</h3>
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="" width="" height=""/>
+            <img src="img/icon-cart.png" alt="Скидки 50%" width="59" height="72"/>
             <a class="btn" href="#">На 350 товаров</a>
           </section>
           <section class="categories-item categories-delivery">
             <h3>Доставка</h3>
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="" width="" height=""/>
+            <img src="img/icon-car.png" alt="Доставка" width="78" height="63"/>
             <a class="btn" href="#">Бесплатно</a>
           </section>
         </div>
       </div>
-      <!-- Может ли быть класс одинаковый у "популярные товары" и "популярные
-      производители"? -->
+
       <div class="popular">
         <div class="popular-title">
           <h2>Популярные товары:</h2>
@@ -136,35 +125,31 @@
         </div>
         <div class="popular-content">
           <article class="popular-content-item">
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="Перфоратор BOSCH BFG 9000" width="" height=""/>
+            <img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164"/>
             <!-- strong или b? -->
             <strong>Перфоратор BOSCH BFG 9000</strong>
             <span>32500 р.</span>
-            <a class="btn" href="#">25500 р./a>
+            <a class="btn" href="#">25500 р.</a>
           </article>
           <article class="popular-content-item">
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="Перфоратор BOSCH BFG 3000" width="" height=""/>
+            <img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"/>
             <!-- strong или b? -->
             <strong>Перфоратор BOSCH BFG 3000</strong>
             <span>22500 р.</span>
-            <a class="btn" href="#">15500 р./a>
+            <a class="btn" href="#">15500 р.</a>
           </article>
           <article class="popular-content-item">
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="Перфоратор BOSCH BFG 6000" width="" height=""/>
+            <img src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/>
             <!-- strong или b? -->
             <strong>Перфоратор BOSCH BFG 6000</strong>
             <span>30500 р.</span>
-            <a class="btn" href="#">25500 р./a>
+            <a class="btn" href="#">25500 р.</a>
           </article>
           <article class="popular-content-item">
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="Перфоратор BOSCH BFG 2000" width="" height=""/>
+            <img src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112"/>
             <!-- strong или b? -->
             <strong>Перфоратор BOSCH BFG 2000</strong>
-            <a class="btn" href="#">12500 р./a>
+            <a class="btn" href="#">12500 р.</a>
           </article>
         </div>
       </div>
@@ -174,23 +159,30 @@
           <a class="btn" href="#">Все производители</a>
         </div>
         <div class="popular-content">
-          <!-- Добавила классы к ссылкам -->
-          <!-- Вставить ширину/высоту -->
-          <a class="popular-content-developer" href="#"><img src="" alt="BOSCH" width="" height=""/></a>
-          <!-- Вставить ширину/высоту -->
-          <a class="popular-content-developer" href="#"><img src="" alt="Makita" width="" height=""/></a>
-          <!-- Вставить ширину/высоту -->
-          <a class="popular-content-developer" href="#"><img src="" alt="DeWALT" width="" height=""/></a>
-          <!-- Вставить ширину/высоту -->
-          <a class="popular-content-developer" href="#"><img src="" alt="Интерскол" width="" height=""/></a>
-          <!-- Вставить ширину/высоту -->
-          <a class="popular-content-developer" href="#"><img src="" alt="Hitachi" width="" height=""/></a>
-          <!-- Вставить ширину/высоту -->
-          <a class="popular-content-developer" href="#"><img src="" alt="LG" width="" height=""/></a>
-          <!-- Вставить ширину/высоту -->
-          <a class="popular-content-developer" href="#"><img src="" alt="AEG" width="" height=""/></a>
-          <!-- Вставить ширину/высоту -->
-          <a class="popular-content-developer" href="#"><img src="" alt="Metabo" width="" height=""/></a>
+          <a class="popular-content-developer" href="#">
+            <img src="img/BOSCH.jpg" alt="BOSCH" width="126" height="37"/>
+          </a>
+          <a class="popular-content-developer" href="#">
+            <img src="img/Makita.jpg" alt="Makita" width="123" height="40"/>
+          </a>
+          <a class="popular-content-developer" href="#">
+            <img src="img/DeWALT.jpg" alt="DeWALT" width="146" height="44"/>
+          </a>
+          <a class="popular-content-developer" href="#">
+            <img src="img/interskol.jpg" alt="Интерскол" width="200" height="88"/>
+          </a>
+          <a class="popular-content-developer" href="#">
+            <img src="img/Hitachi.jpg" alt="Hitachi" width="169" height="31"/>
+          </a>
+          <a class="popular-content-developer" href="#">
+            <img src="img/LG.jpg" alt="LG" width="121" height="73"/>
+          </a>
+          <a class="popular-content-developer" href="#">
+            <img src="img/AEG.jpg" alt="AEG" width="151" height="96"/>
+          </a>
+          <a class="popular-content-developer" href="#">
+            <img src="img/Metabo.jpg" alt="Metabo" width="204" height="69"/>
+          </a>
         </div>
       <div class="services">
         <h2>Сервисы</h2>
@@ -218,8 +210,8 @@
             совершенно бесплатно! Ведь мы неплохо заработаем, <br>
             поднимая его на ваш этаж!
           </p>
-          <!-- Вставить ширину/высоту -->
-          <img src="" alt="" width="" height=""/>
+          <!-- alt же не везде нужен? -->
+          <img src="img/truck.png" width="468" height="261"/>
         </div>
       </div>
       <div class="company-and-contacts">
@@ -254,17 +246,14 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <!-- Карта -->
-          <map name="имя">
-            <area >
-          </map>
+          <img src="img/map.jpg" alt="Карта" width="300" height="158"/>
           <a class="btn" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <img src="" alt="Техномарт" width="" height=""/>
+        <img src="img/technomart-logo.jpg" alt="Техномарт" width="220" height="47"/>
         <nav class="footer-nav">
           <ul>
             <li>
