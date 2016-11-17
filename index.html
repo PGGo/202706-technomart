@@ -8,80 +8,89 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <h1 class="logo">
-          <a href="#" title="Technomart">
-            <img src="img/technomart-logo.jpg" alt="Technomart" width="220" height="47">
-          </a>
-        </h1>
-        <form class="search" action="index.html" method="post">
-          <label>
-            <!-- Иконки с помощью фона(!!) -->
-            Поиск:
-            <input type="text" name="search">
-          </label>
-        </form>
-        <section class="header-favorites">
-          <!-- Как сделать динамическую цифру? -->
-          Закладки: 0
-        </section>
-        <section class="header-cart">
-          Корзина: 0
-        </section>
-        <a class="btn" href="#">Оформить заказ</a>
-      </div>
-      <div class="header-middle">
-        <div class="header-middle-description">
-          <!-- Здесь же нужно br? -->
-          <p>
-            Интернет-магазин<br>
-            строительных материалов<br>
-            и инструментов для ремонта
-          </p>
+        <div class="container">
+          <h1 class="logo">
+            <a href="#" title="Technomart">
+              <!-- 47 -->
+              <!-- Лого выходить за границы блока, как быть? -->
+              <img src="img/1technomart-logo.jpg" alt="Technomart" width="220" height="42">
+            </a>
+          </h1>
+          <form class="search" action="index.html" method="post">
+            <label>
+              <!-- Иконки с помощью фона(!!) -->
+              Поиск:
+              <input type="text" name="search">
+            </label>
+          </form>
+          <section class="header-top-content">
+            <!-- Как сделать динамическую цифру? -->
+            Закладки: 0
+          </section>
+          <section class="header-top-content">
+            Корзина: 0
+          </section>
+          <a class="header-top-content btn" href="#">Оформить заказ</a>
         </div>
-        <div class="header-middle-contacts">
-          <div class="header-phone">
-            <!-- Вставить ширину/высоту -->
-            <img src="" alt="" height="" width=""/>
-            +7 (812) 555-05-50
+      </div>
+      <div class="header-bottom">
+        <div class="container clearfix">
+          <div class="header-description">
+            <!-- Здесь же нужно br? -->
+            <p>
+              Интернет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта
+            </p>
           </div>
-          <p>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-        </div>
-        <div class="header-middle-registration">
-          <!-- Вставить ширину/высоту (нужна ли для иконок) -->
-          <a class="btn" href="#"><img src="" alt="" />Войти</a>
+          <div class="header-contacts">
+            <div class="header-phone">
+              <!-- Вставить ширину/высоту -->
+              <img src="" alt="" height="" width=""/>
+              +7 (812) 555-05-50
+            </div>
+            <p>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <div class="header-registration">
+            <!-- Вставить ширину/высоту (нужна ли для иконок) -->
+            <a class="btn" href="#">
+              <img src="" alt="" />Войти
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul>
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Спецпредложения</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <nav class="header-bottom">
-        <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Компания</a>
-          </li>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Новости</a>
-          </li>
-          <li>
-            <a href="#">Спецпредложения</a>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main class="container">
+
+    <main class="container clearfix">
       <div class="categories">
-        <div class="categories-up">
+        <div class="categories-up clearfix">
           <section class="categories-item categories-materials">
             <h3>Материалы</h3>
             <img src="img/icon-paint.png" alt="Материалы" width="44" height="65"/>
@@ -98,7 +107,7 @@
             <a class="btn" href="#">Для стройки</a>
           </section>
         </div>
-        <div class="categoried-down">
+        <div class="categories-down clearfix">
           <section class="categories-slider">
             <div class="categories-slider-content">
               <div class="slider-header">
@@ -133,11 +142,11 @@
       </div>
 
       <div class="popular">
-        <div class="popular-title">
+        <div class="popular-title clearfix">
           <h2>Популярные товары:</h2>
           <a class="btn" href="#">Все популярные товары</a>
         </div>
-        <div class="popular-content">
+        <div class="popular-content-pro">
           <article class="product">
             <img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164"/>
             <!-- strong или b? -->
@@ -167,12 +176,13 @@
           </article>
         </div>
       </div>
+
       <div class="popular">
         <div class="popular-title">
           <h2>Популярные производители:</h2>
           <a class="btn" href="#">Все производители</a>
         </div>
-        <div class="popular-content">
+        <div class="popular-content-dev">
           <a class="popular-content-developer" href="#">
             <img src="img/BOSCH.jpg" alt="BOSCH" width="126" height="37"/>
           </a>
@@ -198,13 +208,17 @@
             <img src="img/Metabo.jpg" alt="Metabo" width="204" height="69"/>
           </a>
         </div>
-      <div class="services">
+      </div>
+
+      <div class="services clearfix">
         <h2>Сервисы</h2>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <nav class="services-nav">
+        <div class="services-description">
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+        </div>
+        <div class="services-nav">
           <ul>
             <li>
               <a href="#">Доставка</a>
@@ -216,7 +230,7 @@
               <a href="#">Кредит</a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div class="services-delivery">
           <h2>Доставка</h2>
           <p>
@@ -224,11 +238,11 @@
             совершенно бесплатно! Ведь мы неплохо заработаем, <br>
             поднимая его на ваш этаж!
           </p>
-          <!-- alt же не везде нужен? -->
           <img src="img/truck.png" width="468" height="261"/>
         </div>
       </div>
-      <div class="company-and-contacts">
+
+      <div class="company-and-contacts clearfix">
         <article class="about-company">
           <h2>Компания &laquo;Техномарт&raquo;</h2>
           <p>
@@ -267,71 +281,74 @@
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <img src="img/technomart-logo.jpg" alt="Техномарт" width="220" height="47"/>
-        <nav class="footer-nav">
-          <ul>
-            <li>
-              <a href="#">Компания</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="container clearfix">
+          <img src="img/technomart-logo-footer.jpg" alt="Техномарт" width="220" height="68"/>
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <section class="footer-contacts">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55
+          </section>
+          <div class="footer-breadcrumbs">
+            <ul>
+              <li>
+                <a href="#">Материалы</a>
+              </li>
+              <li>
+                <a href="#">Техника</a>
+              </li>
+              <li>
+                <a href="#">Инструмент</a>
+              </li>
+              <li>
+                <a href="#">Спецпредложения</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="footer-middle">
-        <section class="footer-contacts">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          +7 (812) 555-05-55
-        </section>
-        <nav class="footer-breadcrumbs">
-          <ul>
-            <li>
-              <a href="#">Материалы</a>
-            </li>
-            <li>
-              <a href="#">Техника</a>
-            </li>
-            <li>
-              <a href="#">Инструмент</a>
-            </li>
-            <li>
-              <a href="#">Спецпредложения</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <section class="footer-copyright">
-          &copy; 2010-2016 Компания &laquo;Техномарт&raquo;<br>
-          Все права защищены
-        </section>
-        <section class="footer-social">
-          <a class="btn social-btn" href="#">Вконтакте</a>
-          <a class="btn social-btn" href="#">Фейсбук</a>
-          <a class="btn social-btn" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-feedback">
-          <p>
-            Обратная связь:
-          </p>
-          <a href="#">mail@htmlacademy.ru</a>
-        </section>
-        <section class="footer-developer">
-          <p>
-            Разработано &ndash;
-          </p>
-          <a href="#">htmlacademy.ru</a>
-        </section>
+
+      <div class="footer-bottom clearfix">
+        <div class="container clearfix">
+          <section class="footer-copyright">
+            &copy; 2010-2016 Компания &laquo;Техномарт&raquo;<br>
+            Все права защищены
+          </section>
+          <section class="footer-social">
+            <a class="btn social-btn" href="#">Вконтакте</a>
+            <a class="btn social-btn" href="#">Фейсбук</a>
+            <a class="btn social-btn" href="#">Инстаграм</a>
+          </section>
+          <section class="footer-feedback">
+            <p>
+              Обратная связь:
+            </p>
+            <a href="#">mail@htmlacademy.ru</a>
+          </section>
+          <section class="footer-developer">
+            <p>
+              Разработано &ndash;
+            </p>
+            <a href="#">htmlacademy.ru</a>
+          </section>
+        </div>
       </div>
     </footer>
   </body>

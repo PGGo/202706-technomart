@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-size: 13px;
   line-height: 1;
   color: #000000;
@@ -7,6 +9,8 @@ body {
 }
 
 h1 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 1;
   color: #32425c;
@@ -15,6 +19,8 @@ h1 {
 }
 
 h2 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 1;
   color: #32425c;
@@ -23,9 +29,356 @@ h2 {
 }
 
 h3 {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 1;
   color: #ffffff;
   font-weight: bold;
   font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.container {
+  width: 940px;
+  min-height: 40px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-header {
+  margin-top: 0;
+  padding: 0;
+}
+
+.header-top {
+  margin-bottom: 5px;
+}
+
+.search {
+  margin-left: 30px;
+}
+
+.header-top-content, .search {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 50px;
+  padding: 5px;
+  vertical-align: top;
+}
+
+.header-top-content:last-child {
+  margin-right: 0;
+}
+
+.header-bottom .container {
+  min-height: 48px;
+}
+
+.header-description {
+  float: left;
+  width: 300px;
+  min-height: 155px;
+  margin-right: 20px;
+}
+.header-contacts {
+  float: left;
+  width: 300px;
+  min-height: 155px;
+}
+
+.header-registration {
+  float: right;
+  width: 300px;
+  min-height: 155px;
+}
+
+.header-nav {
+  clear: both;
+  width: 940;
+  min-height: 60px;
+  margin-bottom: 58px;
+}
+
+.categories {
+  margin-top: 60px;
+  margin-bottom: 55px;
+}
+
+.categories-up {
+  margin-bottom: 20px;
+}
+
+.categories-item {
+  float: left;
+  width: 260px;
+  min-height: 83px;
+  padding: 20px;
+}
+
+.categories-up .categories-item {
+  margin-right: 20px;
+}
+
+.categories-up .categories-item:last-child {
+  margin-right: 0;
+}
+
+.categories-slider {
+  float: left;
+  width: 580px;
+  min-height: 226px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.categories-down .categories-item {
+  margin-bottom: 20px;
+}
+
+.categories-down .categories-item:last-child {
+  margin-bottom: 0;
+}
+
+.popular-title {
+  min-height: 40px;
+  padding: 25px;
+  margin-bottom: 19px;
+}
+
+.popular-title h2 {
+  float: left;
+  width: 450px;
+}
+
+.popular-title a {
+  display: block;
+  float: right;
+  width: 250px;
+  text-align: center;
+}
+
+.popular-content-pro {
+  margin-bottom: 19px;
+  font-size: 0;
+}
+
+.product {
+  display: inline-block;
+  width: 218px;
+  min-height: 318px;
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 13px;
+  /* почему содержимое не выравнивается? */
+  text-align: center;
+  border: 1px solid black;
+}
+
+.product:last-child {
+  margin-right: 0;
+}
+
+.popular-content-dev {
+  margin-bottom: 65px;
+  font-size: 0px;
+}
+
+/* как выравнить внутри? */
+.popular-content-developer {
+  display: inline-block;
+  width: 218px;
+  min-height: 145px;
+  margin-right: 20px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.popular-content-developer:nth-child(4n) {
+  margin-right: 0;
+}
+
+.popular-content-dev {
+  margin-bottom: 63px;
+  font-size: 0;
+}
+
+.services {
+  padding-top: 62px;
+
+}
+
+.services-description {
+  width: 430px;
+  margin-bottom: 70px;
+}
+
+.services h2 {
+  margin-bottom: 40px;
+}
+
+.services-nav {
+  float: left;
+  width: 240px;
+  min-height: 185px;
+  margin-right: 70px;
+  margin-bottom: 109px;
+}
+
+.services-delivery {
+  float: left;
+  width: 300px;
+  padding: 0 10px;
+}
+
+/* рисунок заходит на блок с доставкой по макету. как быть? */
+.services img {
+  float: left;
+}
+
+.company-and-contacts {
+  margin-bottom: 82px;
+  padding-top: 80px;
+}
+
+.about-company {
+  float: left;
+  width: 550px;
+  min-height: 375px;
+}
+
+.contacts {
+  float: right;
+  width: 300px;
+  min-height: 375px;
+}
+
+.main-footer {
+  min-height: 300px;
+}
+
+.footer-top img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.footer-nav {
+  float: right;
+  width: 550px;
+  min-height: 68px;
+  margin-bottom: 10px;
+}
+
+.footer-top {
+  min-height: 195px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 380px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.footer-breadcrumbs {
+  float: right;
+  width: 540px;
+  margin-bottom: 10px;
+}
+
+.footer-copyright {
+  float: left;
+  width: 240px;
+  margin-right: 140px;
+}
+
+.footer-social {
+  float: left;
+  width: 140px;
+  margin-right: 90px;
+  padding: 0 10px;
+}
+
+/* Почему большой отступ между текстом и ссылкой? */
+.footer-feedback {
+  float: left;
+  width: 140px;
+  padding: 0 10px;
+}
+
+.footer-developer {
+  float: right;
+  width: 140px;
+}
+
+.footer-bottom {
+  min-height: 35px;
+  padding: 35px 0;
+}
+
+.main-breadcrumbs {
+  width: 620px;
+  min-height: 35px;
+  padding: 10px 0;
+}
+
+.main-title {
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.filters {
+  float: left;
+  width: 220px;
+  min-height: 1050px;
+  margin-right: 18px;
+}
+
+.catalog-products {
+  float: right;
+  width: 700px;
+  margin-bottom: 32px;
+  font-size: 0;
+}
+
+.catalog-products .product {
+  margin-bottom: 18px;
+}
+
+.catalog-products .product:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* Почему тут padding странно работает? */
+.sorting {
+  float: right;
+  width: 700px;
+  margin-bottom: 16px;
+  padding: 1px;
+  font-size: 13px;
+}
+
+.pages {
+  float: right;
+  width: 700px;
+  margin-bottom: 60px;
+}
+
+.main-description {
+  padding-top: 65px;
+  padding-bottom: 54px;
+}
+
+.main-description p {
+  padding-top: 15px;
+  line-height: 24px;
 }
